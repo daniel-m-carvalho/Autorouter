@@ -205,6 +205,7 @@ https://github.com/isel-leic-ave/autorouter/assets/578217/3c25c866-58c8-4dd1-80e
 
 - Daniel Carvalho
 - Gonçalo Frutuoso
+- João Ramos
 
 ---
 
