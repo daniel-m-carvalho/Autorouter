@@ -1,4 +1,4 @@
-# autorouter
+# Autorouter
 
 Automatic HTTP handlers for a controller object with specific annotations.
 
@@ -208,7 +208,7 @@ https://github.com/isel-leic-ave/autorouter/assets/578217/3c25c866-58c8-4dd1-80e
 
 ---
 
-Instituto Superior de Engenharia de Lisboa
-BSc in Computer Science and Engineering
-Languages and Managed Runtimes
+Instituto Superior de Engenharia de Lisboa<br>
+BSc in Computer Science and Engineering<br>
+Languages and Managed Runtimes<br>
 Summer Semester of 2022/2023
