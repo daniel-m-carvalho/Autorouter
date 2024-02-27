@@ -1,4 +1,4 @@
-# autorouter
+# Autorouter
 
 Automatic HTTP handlers for a controller object with specific annotations.
 
@@ -112,6 +112,43 @@ java -jar autorouter-bench/build/libs/autorouter-bench-jmh.jar -i 4 -wi 4 -f 1 -
 - `-r` 2 run each iteration for 2 seconds
 - `-w` 2 run each warmup iteration for 2 seconds.
 
+### Results
+
+| ![Benchmark results](docs/img.png) |
+|:----------------------------------:|
+| *Autorouter JMH BenchMark Results* |
+
+Below are the results of the benchmark for the different domains and approaches,
+regarding the performance of each method compared to the baseline approach.
+
+#### Domain Empty:
+
+|     Method     | Approach | Performance |
+|:--------------:|:--------:|:-----------:|
+|   addStudent   | reflect  |    4.37     |
+|   addStudent   | dynamic  |    1.36     |
+| removeStudent  | reflect  |    5.41     |
+| removeStudent  | dynamic  |    0.97     |
+|     search     | reflect  |    23.1     | 
+|     search     | dynamic  |    1.00     |
+
+#### Domain Classroom:
+
+|    Method     | Approach | Performance |
+|:-------------:|:--------:|:-----------:|
+|  addStudent   | reflect  |    2.66     |
+|  addStudent   | dynamic  |    1.08     |
+| removeStudent | reflect  |    4.63     |
+| removeStudent | dynamic  |    1.05     |
+|    search     | reflect  |    21.0     |
+|    search     | dynamic  |    0.99     |
+
+The **performance** is calculated as the ratio between the number of operations in ms of the baseline approach and the number of operations in ms of the current approach,
+and represents the performance loss or gain of the current approach compared to the baseline approach of the current domain.
+
+The results show
+the **dynamic code** generation approach is **much faster** than the reflection approach in all methods of a given domain.
+
 ## Assignment 3 - Lazy Sequences
 
 ### Part 1 - `Path.watchNewFilesContent()`
@@ -205,6 +242,7 @@ https://github.com/isel-leic-ave/autorouter/assets/578217/3c25c866-58c8-4dd1-80e
 
 - Daniel Carvalho
 - Gonçalo Frutuoso
+- João Ramos
 
 ---
 
